@@ -108,6 +108,63 @@
     });
   }
 
+const form = document.getElementById("contact-form");
+const statusElement = form.querySelector(".status");
+
+form.addEventListener("submit", async function (event) {
+  event.preventDefault(); // Pinipigilan nito ang pag-reload ng page
+
+  // 1. Suriin kung kumpleto ang mga field (HTML5 Validation)
+  if (!form.checkValidity()) {
+    statusElement.textContent = "Please fill out all required fields correctly.";
+    statusElement.style.color = "#ff4d4d"; // Pula kung may kulang
+    return;
+  }
+
+  // 2. Ihanda ang data na ipapadala
+  const data = new FormData(event.target);
+  
+  // Palitan ang text ng button habang naglo-load
+  const button = form.querySelector(".btn");
+  const originalButtonText = button.textContent;
+  button.textContent = "Sending...";
+  button.disabled = true;
+
+  // 3. I-send ang data sa Formspree gamit ang Fetch API
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      // SUCCESS: Maayos na naipadala
+      statusElement.textContent = "Thanks! Your message has been sent.";
+      statusElement.style.color = "#cbb279"; // Kulay ginto/berde depende sa CSS mo
+      form.reset(); // Buburahin ang laman ng form inputs pagkatapos mag-send
+    } else {
+      // ERROR mula sa Formspree server
+      const responseData = await response.json();
+      if (responseData.hasOwnProperty('errors')) {
+        statusElement.textContent = responseData['errors'].map(error => error['message']).join(", ");
+      } else {
+        statusElement.textContent = "Oops! There was a problem submitting your form.";
+      }
+      statusElement.style.color = "#ff4d4d";
+    }
+  } catch (error) {
+    // NETWORK ERROR (Walang internet o block ang connection)
+    statusElement.textContent = "Oops! There was a problem connecting to the server.";
+    statusElement.style.color = "#ff4d4d";
+  } finally {
+    // Ibalik sa dati ang button matapos ang proseso
+    button.textContent = originalButtonText;
+    button.disabled = false;
+  }
+});
 
   function initForm() {
     const form = $('#contact-form');
