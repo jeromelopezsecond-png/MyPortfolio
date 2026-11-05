@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,25 +11,45 @@
   <meta property="og:title" content="Jerome Lopez | Portfolio">
   <meta property="og:description" content="Video editing, generative AI, social media and UI/UX work by Jerome Lopez.">
   <meta property="og:type" content="website">
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230B0B0D'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23C6A76A' font-family='serif'%3EJL%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <svg class="sprite" aria-hidden="true" focusable="false">
-    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
-    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></symbol>
-    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </symbol>
+
+    <symbol id="i-ig" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/>
+    </symbol>
+
+    <symbol id="i-wa" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
   </svg>
+
   <a class="skip" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <a class="brand" href="#home" aria-label="Jerome Lopez, home">J<span>L</span></a>
-    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <i></i>
+      <i></i>
+    </button>
+
     <nav id="menu" class="menu" aria-label="Primary">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -43,22 +64,35 @@
     <!-- HERO -->
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="glow" aria-hidden="true"></div>
+
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="kicker intro">My Portfolio</p>
-          <h1 id="hero-title" class="intro"><span>Jerome</span> <span class="it">Lopez</span></h1>
-          <p class="tagline intro">Video editor, generative AI specialist and virtual assistant who cares how things look and how they feel to use.</p>
+
+          <h1 id="hero-title" class="intro">
+            <span>Jerome</span>
+            <span class="it">Lopez</span>
+          </h1>
+
+          <p class="tagline intro">
+            Video editor, generative AI specialist and virtual assistant who cares how things look and how they feel to use.
+          </p>
+
           <div class="hero-actions intro">
             <a class="btn" href="#projects">Explore My Work</a>
             <a class="link" href="#contact">Get in touch</a>
           </div>
         </div>
+
         <figure class="portrait intro" aria-label="Profile photo placeholder">
           <img src="jerome.jpg" alt="Jerome Lopez">
           <figcaption>Pampanga, Philippines</figcaption>
         </figure>
       </div>
-      <a class="scroll" href="#about" aria-label="Scroll to About"><span></span></a>
+
+      <a class="scroll" href="#about" aria-label="Scroll to About">
+        <span></span>
+      </a>
     </section>
 
     <!-- ABOUT -->
@@ -66,16 +100,35 @@
       <div class="wrap split">
         <div class="reveal">
           <h2 id="about-title">About me</h2>
-            <div class="frame" aria-hidden="true"><img src="jejeje.jpg" alt="Jerome Lopez"></div>  
+          <div class="frame" aria-hidden="true">
+            <img src="jejeje.jpg" alt="Jerome Lopez">
+          </div>
         </div>
+
         <div class="reveal">
-          <p class="lead">I'm a second-year Information Systems student in Pampanga who edits video, builds with generative AI and designs interfaces in Figma.</p>
+          <p class="lead">
+            I'm a second-year Information Systems student in Pampanga who edits video, builds with generative AI and designs interfaces in Figma.
+          </p>
+
           <p></p>
+
           <dl class="facts">
-            <div><dt>Studying</dt><dd>BS Information Systems</dd></div>
-            <div><dt>Based in</dt><dd>Pampanga, PH</dd></div>
-            <div><dt>Graduating</dt><dd>2028</dd></div>
-            <div><dt>Also work as</dt><dd>Social Media Manager</dd></div>
+            <div>
+              <dt>Studying</dt>
+              <dd>BS Information Systems</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Pampanga, PH</dd>
+            </div>
+            <div>
+              <dt>Graduating</dt>
+              <dd>2028</dd>
+            </div>
+            <div>
+              <dt>Also work as</dt>
+              <dd>Social Media Manager</dd>
+            </div>
           </dl>
         </div>
       </div>
@@ -85,18 +138,32 @@
     <section class="section alt" id="skills" aria-labelledby="skills-title">
       <div class="wrap">
         <h2 id="skills-title" class="reveal">Skills &amp; expertise</h2>
+
         <div class="cards">
           <article class="card reveal">
             <h3>Content &amp; Video</h3>
-            <ul><li>Video editing</li><li>Long-form vlog editing</li><li>Social media management</li></ul>
+            <ul>
+              <li>Video editing</li>
+              <li>Long-form vlog editing</li>
+              <li>Social media management</li>
+            </ul>
           </article>
+
           <article class="card reveal">
             <h3>AI &amp; Design</h3>
-            <ul><li>Generative AI</li><li>UI/UX design</li><li>Figma</li><li>Human-computer interaction</li></ul>
+            <ul>
+              <li>Generative AI</li>
+              <li>UI/UX design</li>
+              <li>Figma</li>
+              <li>Human-computer interaction</li>
+            </ul>
           </article>
+
           <article class="card reveal">
             <h3>Support</h3>
-            <ul><li>Virtual assistance</li></ul>
+            <ul>
+              <li>Virtual assistance</li>
+            </ul>
           </article>
         </div>
       </div>
@@ -106,18 +173,38 @@
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="wrap">
         <h2 id="projects-title" class="reveal">Featured projects</h2>
+
         <div class="projects">
           <a class="proj reveal" href="#contact" aria-label="Editing Long Form Vlogs">
-            <div class="meta"><h3>Editing Long Form Vlogs</h3><p>Editor of the Life with Christian and Rachel channel on YouTube, cutting long-form vlogs from raw footage to finished video.</p><small>Video Editing</small></div>
+            <div class="meta">
+              <h3>Editing Long Form Vlogs</h3>
+              <p>Editor of the Life with Christian and Rachel channel on YouTube, cutting long-form vlogs from raw footage to finished video.</p>
+              <small>Video Editing</small>
+            </div>
           </a>
+
           <a class="proj reveal" href="#contact" aria-label="Social Media Manager">
-            <div class="meta"><h3>Social Media Manager</h3><p>Managing five Facebook pages, from planning content to keeping each page active.</p><small>Content Strategy</small></div>
+            <div class="meta">
+              <h3>Social Media Manager</h3>
+              <p>Managing five Facebook pages, from planning content to keeping each page active.</p>
+              <small>Content Strategy</small>
+            </div>
           </a>
+
           <a class="proj reveal" href="#contact" aria-label="AI Generator Specialist">
-            <div class="meta"><h3>AI Generator Specialist</h3><p>Generating thousands of outputs from a single prompt.</p><small>Generative AI</small></div>
+            <div class="meta">
+              <h3>AI Generator Specialist</h3>
+              <p>Generating thousands of outputs from a single prompt.</p>
+              <small>Generative AI</small>
+            </div>
           </a>
+
           <a class="proj reveal" href="#contact" aria-label="MedTracker app">
-            <div class="meta"><h3>MedTracker</h3><p>A medicine reminder app designed in Figma.</p><small>UI/UX Design</small></div>
+            <div class="meta">
+              <h3>MedTracker</h3>
+              <p>A medicine reminder app designed in Figma.</p>
+              <small>UI/UX Design</small>
+            </div>
           </a>
         </div>
       </div>
@@ -127,11 +214,31 @@
     <section class="section alt" id="journey" aria-labelledby="journey-title">
       <div class="wrap narrow">
         <h2 id="journey-title" class="reveal">Education &amp; experience</h2>
+
         <ol class="timeline">
-          <li class="reveal"><time>April 2026 to present</time><h3>Virtual Assistant</h3><p>Working as a virtual assistant.</p></li>
-          <li class="reveal"><time>2024 to 2025</time><h3>Account Specialist</h3><p>Comcast.</p></li>
-          <li class="reveal"><time>2024 to 2028</time><h3>BS Information Systems</h3><p>City College of Angeles. Currently a 2nd-year student.</p></li>
-          <li class="reveal"><time>2022 to 2024</time><h3>Senior High School, STEM</h3><p>Systems Plus College Foundation.</p></li>
+          <li class="reveal">
+            <time>April 2026 to present</time>
+            <h3>Virtual Assistant</h3>
+            <p>Working as a virtual assistant.</p>
+          </li>
+
+          <li class="reveal">
+            <time>2024 to 2025</time>
+            <h3>Account Specialist</h3>
+            <p>Comcast.</p>
+          </li>
+
+          <li class="reveal">
+            <time>2024 to 2028</time>
+            <h3>BS Information Systems</h3>
+            <p>City College of Angeles. Currently a 2nd-year student.</p>
+          </li>
+
+          <li class="reveal">
+            <time>2022 to 2024</time>
+            <h3>Senior High School, STEM</h3>
+            <p>Systems Plus College Foundation.</p>
+          </li>
         </ol>
       </div>
     </section>
@@ -141,20 +248,64 @@
       <div class="wrap split">
         <div class="reveal">
           <h2 id="contact-title">Let's work together</h2>
-          <p class="lead">Have a video, a design or an AI project in mind? Send a message and I'll reply by email.</p>
+
+          <p class="lead">
+            Have a video, a design or an AI project in mind? Send a message and I'll reply by email.
+          </p>
+
           <ul class="contacts">
-            <li><span>Email</span><a href="mailto:jeromelopezsecond@gmail.com">jeromelopezsecond@gmail.com</a></li>
-            <li><span>Location</span>Pampanga, Philippines</li>
-            <li><span>Social</span><div class="social">
-              <a class="sbtn" href="https://www.facebook.com/kylejerome28" rel="noopener" aria-label="Facebook" title="Facebook"><svg class="ico" aria-hidden="true"><use href="#i-fb"/></svg></a>
-              <a class="sbtn" href="https://instagram.com/akxxno_o" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ico" aria-hidden="true"><use href="#i-ig"/></svg></a>
-              <a class="sbtn" href="https://wa.me/639633604733" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a></div></li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:jeromelopezsecond@gmail.com">jeromelopezsecond@gmail.com</a>
+            </li>
+
+            <li>
+              <span>Location</span>
+              Pampanga, Philippines
+            </li>
+
+            <li>
+              <span>Social</span>
+
+              <div class="social">
+                <a class="sbtn" href="https://www.facebook.com/kylejerome28" rel="noopener" aria-label="Facebook" title="Facebook">
+                  <svg class="ico" aria-hidden="true">
+                    <use href="#i-fb"/>
+                  </svg>
+                </a>
+
+                <a class="sbtn" href="https://instagram.com/akxxno_o" rel="noopener" aria-label="Instagram" title="Instagram">
+                  <svg class="ico" aria-hidden="true">
+                    <use href="#i-ig"/>
+                  </svg>
+                </a>
+
+                <a class="sbtn" href="https://wa.me/639633604733" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+                  <svg class="ico" aria-hidden="true">
+                    <use href="#i-wa"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
           </ul>
         </div>
+
         <form class="form reveal" id="contact-form" novalidate>
-          <label>Name<input type="text" name="name" autocomplete="name" required></label>
-          <label>Email<input type="email" name="email" autocomplete="email" required></label>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
           <button class="btn" type="submit">Send message</button>
           <p class="status" role="status" aria-live="polite"></p>
         </form>
@@ -165,7 +316,13 @@
   <footer class="footer">
     <div class="wrap foot">
       <p>&copy; <span id="year">2026</span> Jerome Lopez. All rights reserved.</p>
-      <nav aria-label="Social"><a href="https://www.facebook.com/kylejerome28" rel="noopener">Facebook</a><a href="https://instagram.com/akxxno_o" rel="noopener">Instagram</a><a href="https://wa.me/639633604733" rel="noopener">WhatsApp</a></nav>
+
+      <nav aria-label="Social">
+        <a href="https://www.facebook.com/kylejerome28" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/akxxno_o" rel="noopener">Instagram</a>
+        <a href="https://wa.me/639633604733" rel="noopener">WhatsApp</a>
+      </nav>
+
       <button class="top">Back to top</button>
     </div>
   </footer>
