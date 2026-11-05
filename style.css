@@ -1,5 +1,5 @@
 
-/* ========== 1. TOKENS ========== */
+/*tokensa*/
 :root {
   --obsidian: #0B0B0D;
   --charcoal: #151518;
@@ -23,7 +23,7 @@
   --t: .45s var(--ease);
 }
 
-/* ========== 2. BASE ========== */
+/*basef*/
 *,
 *::before,
 *::after {
@@ -100,7 +100,7 @@ button {
   transform: scaleX(0);
 }
 
-/* ========== 3. TYPOGRAPHY ========== */
+/*fonts*/
 h1,
 h2,
 h3 {
@@ -150,7 +150,7 @@ p {
   margin-bottom: var(--s3);
 }
 
-/* ========== 4. NAV ========== */
+/*nav*/
 .nav {
   position: fixed;
   inset: 0 0 auto 0;
@@ -267,7 +267,7 @@ p {
   transform: rotate(-45deg);
 }
 
-/* ========== 5. BUTTONS ========== */
+/*pindutan ni mang kanor*/
 .btn {
   display: inline-block;
   background: var(--gold);
@@ -298,7 +298,7 @@ p {
   border-color: var(--gold);
 }
 
-/* ========== 6. HERO ========== */
+/*superman*/
 .hero {
   position: relative;
   min-height: 100svh;
@@ -478,7 +478,7 @@ h1.intro {
   }
 }
 
-/* ========== 7. SECTIONS ========== */
+/*sections*/
 .section {
   padding: var(--s6) 0;
 }
@@ -532,7 +532,7 @@ h1.intro {
   margin: 0;
 }
 
-/* ========== 8. SKILLS ========== */
+/*skils*/
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -563,7 +563,7 @@ h1.intro {
   color: var(--ivory);
 }
 
-/* ========== 9. PROJECTS ========== */
+/*projects*/
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -626,7 +626,7 @@ h1.intro {
   transform: scaleY(1);
 }
 
-/* ========== 10. TIMELINE ========== */
+/*tinmeline*/
 .timeline {
   position: relative;
   padding-left: 2.2rem;
@@ -663,7 +663,7 @@ h1.intro {
   margin: .2rem 0 .4rem;
 }
 
-/* ========== 11. CONTACT ========== */
+/*contact*/
 .contacts li {
   display: flex;
   gap: var(--s3);
@@ -772,7 +772,7 @@ h1.intro {
   font-size: .9rem;
 }
 
-/* ========== 12. FOOTER ========== */
+/*footer */
 .footer {
   border-top: 1px solid var(--line);
   padding: var(--s4) 0;
@@ -812,7 +812,7 @@ h1.intro {
   transform: translateY(-3px);
 }
 
-/* ========== 13. REVEAL ========== */
+/*reveal*/
 .js .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -824,7 +824,7 @@ h1.intro {
   transform: none;
 }
 
-/* ========== 14. RESPONSIVE ========== */
+/*responsiveshits*/
 @media (max-width: 900px) {
   .burger {
     display: block;
