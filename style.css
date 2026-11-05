@@ -768,8 +768,12 @@ h1.intro {
 }
 
 .status {
-  min-height: 1.5rem;
-  font-size: .9rem;
+  margin-top: 15px;
+  font-size: 14px;
+  min-height: 20px; 
+  transition: color 0.3s ease;
+}
+
 }
 
 /*footer */
