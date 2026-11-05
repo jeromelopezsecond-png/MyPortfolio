@@ -143,7 +143,7 @@ form.addEventListener("submit", async function (event) {
     if (response.ok) {
       // SUCCESS: Maayos na naipadala
       statusElement.textContent = "Thanks! Your message has been sent.";
-      statusElement.style.color = "#cbb279"; // Kulay ginto/berde depende sa CSS mo
+      statusElement.style.color = "#cbb279"; 
       form.reset(); // Buburahin ang laman ng form inputs pagkatapos mag-send
     } else {
       // ERROR mula sa Formspree server
